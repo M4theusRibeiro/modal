@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="modal.css">
+    <script src="modal.js"></script>
+</head>
+<body>
+    <span onclick="mostrarModal()" class="navbtn">Modal</span>
+    <div class="overlay" id="overlay">
+        <div class="modal" id="modal">
+            <div class="headerModal">
+                <span class="tituloModal">Máquinas</span>
+                <span class="fecharModal btnFechar" onclick="fecharModal()"><img src="./fechar.svg"></span>
+            </div>
+            <div class="bodyModal">
+                <div class="bloco">
+                    <span class="estilo tamanho1"><span class="subTitulo">Unidade:</span>
+                        <select class="inputModal" id="escolherUnidade">
+                            <option></option>
+                            <option value="0">Unidade Paulista</option>
+                            <option value="1">Unidade Paulista</option>
+                            <option value="2">Unidade Paulista</option>
+                            <option value="3">Unidade Paulista</option>
+                        </select></span>
+                    <span class="estilo tamanho1"><span class="subTitulo">Número de Série:</span>
+                        <input class="inputModal" id="numeroDeSerie"></span>
+                </div>
+
+                <div class="bloco">
+                    <span class="estilo tamanho2"><span class="subTitulo">Processador:</span>
+                        <input class="inputModal" id="processador"></span>
+
+                    <span class="estilo tamanho2"><span class="subTitulo">Memória RAM:</span>
+                        <input class="inputModal" id="memoriaRam"></span>
+
+                    <span class="estilo tamanho3"><span class="subTitulo">Armazenamento:</span>
+                        <select class="inputModal" id="escolherArmazenamento">
+                            <option></option>
+                            <option value="0">HD</option>
+                            <option value="1">SSD</option>
+                        </select></span>
+                </div>
+            </div>
+            <div class="modalFooter">
+                <button class="btnSalvar" onclick="salvarEdicaoMaquina()">Salvar</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
