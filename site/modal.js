@@ -25,13 +25,46 @@ const cliqueFora = (event) => {
 }
 
 function salvarEdicaoMaquina(){
-    let unidade = document.getElementById('escolherUnidade').value;
-    let numeroDeSerie = document.getElementById('numeroDeSerie').value;
-    let processador = document.getElementById('processador').value;
-    let memoriaRam = document.getElementById('memoriaRam').value;
-    let escolherArmazenamento = document.getElementById('escolherArmazenamento').value;
+    let unidade = document.getElementById('escolherUnidadeModal').value;
+    let numeroDeSerie = document.getElementById('numeroDeSerieModal').value;
+    let processador = document.getElementById('processadorModal').value;
+    let memoriaRam = document.getElementById('memoriaRamModal').value;
+    let escolherArmazenamento = document.getElementById('escolherArmazenamentoModal').value;
+    let qtdArmazenamento = document.getElementById('qtdArmazenamentoModal').value;
 
-        if(unidade != undefined && unidade != '' && numeroDeSerie != undefined && numeroDeSerie != '' && processador != undefined && processador != '' && memoriaRam != undefined && memoriaRam != '' && escolherArmazenamento != undefined && escolherArmazenamento != ''){
+        if(unidade != undefined && unidade != '' && numeroDeSerie != undefined && numeroDeSerie != '' && processador != undefined && processador != '' && memoriaRam != undefined && memoriaRam != '' && escolherArmazenamento != undefined && escolherArmazenamento != ''&& qtdArmazenamento != undefined && qtdArmazenamento != ''){
+            alert("Dados alterados ")    
+        }else{
+            alert("Verifique os campos");
+        }
+
+}
+
+function salvarEdicaoUnidade(){
+    let unidade = document.getElementById('escolherUnidadeModal').value;
+    let numeroDeSerie = document.getElementById('numeroDeSerieModal').value;
+    let processador = document.getElementById('processadorModal').value;
+    let memoriaRam = document.getElementById('memoriaRamModal').value;
+    let escolherArmazenamento = document.getElementById('escolherArmazenamentoModal').value;
+    let qtdArmazenamento = document.getElementById('qtdArmazenamentoModal').value;
+
+        if(unidade != undefined && unidade != '' && numeroDeSerie != undefined && numeroDeSerie != '' && processador != undefined && processador != '' && memoriaRam != undefined && memoriaRam != '' && escolherArmazenamento != undefined && escolherArmazenamento != ''&& qtdArmazenamento != undefined && qtdArmazenamento != ''){
+            alert("Dados alterados ")    
+        }else{
+            alert("Verifique os campos");
+        }
+
+}
+
+function salvarEdicaoFuncionario(){
+    let unidade = document.getElementById('escolherUnidadeModal').value;
+    let numeroDeSerie = document.getElementById('numeroDeSerieModal').value;
+    let processador = document.getElementById('processadorModal').value;
+    let memoriaRam = document.getElementById('memoriaRamModal').value;
+    let escolherArmazenamento = document.getElementById('escolherArmazenamentoModal').value;
+    let qtdArmazenamento = document.getElementById('qtdArmazenamentoModal').value;
+
+        if(unidade != undefined && unidade != '' && numeroDeSerie != undefined && numeroDeSerie != '' && processador != undefined && processador != '' && memoriaRam != undefined && memoriaRam != '' && escolherArmazenamento != undefined && escolherArmazenamento != ''&& qtdArmazenamento != undefined && qtdArmazenamento != ''){
             alert("Dados alterados ")    
         }else{
             alert("Verifique os campos");
